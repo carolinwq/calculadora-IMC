@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+
+    <header>
+        <a href="https://github.com/carolinwq">
+            <div>
+                <img class="img-git" src="img/logotipo-do-github.png" alt="Ícone Github">
+                <h2>/carolinwq</h2>
+            </div>
+        </a>
+    </header>
+
+    <main class="container">
+            <h1>Calcule seu IMC</h1>
+
+            <div class="form">
+                <div id="campo-sexo">
+                    <legend>Sexo:</legend>
+
+                    <label for="feminino">
+                        <input type="radio" name="sexo" value="feminino"> Feminino
+                    </label>
+
+                    <label for="feminino">
+                        <input type="radio" name="sexo" value="masculino"> Masculino
+                    </label>
+                </div>
+                
+                <div id="campo-idade">
+                    <label for="idade">Idade:</label>
+                    <input type="" id="idade" class="input-padrao" required placeholder="Ex: 21">
+                </div>
+
+                <div id="campo-peso">
+                    <label for="peso">Peso (KG):</label>
+                    <input type="" id="peso" class="input-padrao" required placeholder="Ex: 74,5">
+                </div>
+
+                <div id="campo-altura">
+                    <label for="altura">Altura (M):</label>
+                    <input type="" id="altura" class="input-padrao" required placeholder="Ex: 1,65">
+                </div>
+
+                <div>
+                    <input type="submit" value="Calcular" class="calcular">
+                </div>
+            </div>
+    </main>  
+
+    <div class="container resultado">
+        <h1>Resultado</h1>
+        <p class="imc">Seu IMC é:</p>
+        <p class="imc-valor">XX</p>
+
+        <p class="consulte">Consulte a tabela de referência abaixo para entender a sua classificação:</p>
+        <img src="img/tabela-IMC.jpg" alt="">
+
+        <p class="obs">*Embora o IMC seja uma ferramenta rápida, existem outros fatores importantes que devem ser levados em conta. Indicamos que realize uma avaliação com um especialista.</p>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
